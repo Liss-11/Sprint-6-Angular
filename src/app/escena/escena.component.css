@@ -1,0 +1,29 @@
+* {
+  font-size: 0.7rem;
+  margin: 0;
+  padding: 0;
+}
+.elementos-lista {
+  border: 2px solid black;
+  background-color: white;
+  opacity: 0.8;
+}
+.selected {
+  background-color: pink;
+  opacity: 1;
+}
+.boton {
+  font-size: 1.2rem;
+  font-weight: 400;
+  background: lightgray;
+  color: black;
+}
+.escena {
+  position: fixed;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}

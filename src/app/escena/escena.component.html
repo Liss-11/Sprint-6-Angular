@@ -1,0 +1,26 @@
+
+<div class="container-fluid p-2" >
+    <img [src]='imagen' class="escena">
+    <div class="row m-2">
+       
+            <button type="button" class=" boton btn btn-secundary btn-outline-dark p-3 col-6" (click)= "prev()" 
+                [disabled]="limite1">Anterior</button>
+            <button type="button" class="boton btn btn-dark p-3 col-6" (click)="next()"
+                [disabled]="limite2">Següent</button>
+
+    </div>
+    <div class="row">
+        <ul class="col" style="list-style:none">
+            <li *ngFor="let frase of frasesTotal; let i = index" [ngClass]="{'selected':frase === currentSentence}"
+            class="elementos-lista text-center rounded-pill p-2 m-5 mt-3 mb-3">   
+
+                {{frase.txt}} 
+            </li>
+
+        </ul>
+
+    </div>
+    
+</div>
+
+    
